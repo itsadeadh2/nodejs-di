@@ -4,7 +4,10 @@ import TYPES from "../IoC/types";
 
 @injectable()
 export default class UserControllerDi {
-    constructor(@inject(TYPES.SqliteUserRepository) private readonly userRepository: UserRepository) {
+    
+    constructor(
+        @inject(TYPES.SqliteUserRepository) private readonly userRepository: UserRepository
+        ) {
     }
 
     createUser(name: string) {

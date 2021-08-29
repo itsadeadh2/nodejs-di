@@ -4,7 +4,7 @@
   "description": "Dependency Injection example project for nodejs using inversify",
   "main": "dist/index.js",
   "scripts": {
-    "start:dev": "NODE_ENV=dev ts-node src/index.ts",
+    "start": "ts-node src/index.ts",
     "test": "jest"
   },
   "author": "itsadeadh2",

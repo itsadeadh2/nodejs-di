@@ -3,9 +3,11 @@ import SqliteUserRepository from "../repositories/user.sqlite";
 
 export default class UserController {
     public userRepository: UserRepository;
+
     constructor() {
-        this.userRepository= new SqliteUserRepository();
+        this.userRepository = new SqliteUserRepository();
     }
+
     createUser(name: string) {
         this.userRepository.save(name);
     }
